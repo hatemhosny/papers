@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "papersfm",
+    "staging": "papersfm-staging",
+    "production": "papersfm"
+  }
+}
