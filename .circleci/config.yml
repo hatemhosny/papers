@@ -41,7 +41,7 @@ jobs:
 
       - run:
           name: angular-test
-          command: mkdir test-results && npm test -- --watch=false
+          command: npm install --save-dev karma-junit-reporter && mkdir test-results && npm test -- --watch=false
 
       - store_artifacts:
           path: ./test-results/test-results.xml
