@@ -41,22 +41,22 @@ jobs:
 
       - run:
           name: angular-test
-          command: npm install --save-dev karma-junit-reporter && mkdir test-results && npm test -- --watch=false
+          command: mkdir test-results && npm test -- --watch=false
 
-      - store_artifacts:
-          path: ./test-results/test-results.xml
-          prefix: tests
+      # - store_artifacts:
+      #     path: ./test-results/test-results.xml
+      #     prefix: tests
 
       - run:
           name: angular-lint
-          command: npm run lint -- --formatters-dir ./tslint-formatters --format junit --out ./test-results/tslint.xml
+          command: npm run lint:ci
 
-      - store_artifacts:
-          path: ./test-results/tslint.xml
-          prefix: lint
+      # - store_artifacts:
+      #     path: ./test-results/tslint.xml
+      #     prefix: lint
 
-      - store_test_results:
-          path: ./test-results
+      # - store_test_results:
+      #     path: ./test-results
 
       - run:
           name: copy-firebase.json
