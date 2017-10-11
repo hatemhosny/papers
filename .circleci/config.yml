@@ -52,7 +52,7 @@ jobs:
           command: npm run lint:styles
 
       - store_artifacts:
-          path: ./test-results/tslint.xml
+          path: ./test-results/tslint.json
           prefix: lint
 
       - store_test_results:
