@@ -33,7 +33,7 @@ jobs:
 
       - run:
           name: angular-build
-          command: npm run ng -- build --prod --aot --no-progress
+          command: npm run build:ci
 
       - run:
           name: angular-test
@@ -45,7 +45,7 @@ jobs:
 
       - run:
           name: angular-lint
-          command: npm run lint:ci > ./test-results/tslint.xml
+          command: npm run lint:ci > ./test-results/tslint.json
 
       - store_artifacts:
           path: ./test-results/tslint.xml
