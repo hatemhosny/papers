@@ -45,11 +45,11 @@ jobs:
 
       - run:
           name: angular-lint
-          command: ng lint --type-check --format pmd > ./test-results/tslint.xml
+          command: npm run lint:ci
 
-      - store_artifacts:
-          path: ./test-results/tslint.xml
-          prefix: lint
+      # - store_artifacts:
+      #     path: ./test-results/tslint.xml
+      #     prefix: lint
 
       - store_test_results:
           path: ./test-results
