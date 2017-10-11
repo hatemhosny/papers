@@ -45,7 +45,7 @@ jobs:
 
       - run:
           name: angular-lint
-          command: ng lint --type-check  --format pmd > ./test-results/tslint.xml
+          command: npm run lint:ci
 
       - run:
           name: style-lint
