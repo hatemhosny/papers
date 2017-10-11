@@ -39,20 +39,20 @@ jobs:
           name: angular-test
           command: mkdir test-results && npm test -- --watch=false
 
-      # - store_artifacts:
-      #     path: ./test-results/test-results.xml
-      #     prefix: tests
+      - store_artifacts:
+          path: ./test-results/test-results.xml
+          prefix: tests
 
       - run:
           name: angular-lint
-          command: npm run lint:ci
+          command: ng lint --type-check --format pmd > ./test-results/tslint.xml
 
-      # - store_artifacts:
-      #     path: ./test-results/tslint.xml
-      #     prefix: lint
+      - store_artifacts:
+          path: ./test-results/tslint.xml
+          prefix: lint
 
-      # - store_test_results:
-      #     path: ./test-results
+      - store_test_results:
+          path: ./test-results
 
       - run:
           name: copy-firebase.json
