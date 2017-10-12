@@ -13,5 +13,5 @@ import { MENU_ITEMS } from './app-pages-menu';
 })
 export class AppPagesComponent {
 
-  menu=MENU_ITEMS;
+  menu = MENU_ITEMS;
 }
