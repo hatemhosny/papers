@@ -4,33 +4,33 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Home',
     icon: 'nb-home',
-    link: '/',
+    link: '/home',
     home: true,
   },
   {
     title: 'Dashboard',
-    icon: 'nb-home',
+    icon: 'nb-keypad',
     link: '/dashboard',
   },
   {
     title: 'Journals',
-    icon: 'nb-keypad',
-    link: '/sample',
+    icon: 'ion-ios-book-outline',
+    link: '/papers',
   },
   {
     title: 'Playlists',
-    icon: 'nb-compose',
-    link: '/sample',
+    icon: 'nb-list',
+    link: '/papers',
   },
   {
     title: 'Bookmarks',
-    icon: 'nb-location',
-    link: '/sample',
+    icon: 'ion-bookmark',
+    link: '/papers',
   },
   {
     title: 'Statistics',
     icon: 'nb-bar-chart',
-    link: '/sample',
+    link: '/papers',
   },
   {
     title: 'Profile',
@@ -57,11 +57,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Settings',
     icon: 'nb-gear',
-    link: '/sample',
+    link: '/papers',
   },
   {
     title: 'Admin',
-    icon: 'nb-title',
-    link: '/sample',
+    icon: 'nb-compose',
+    link: '/papers',
   },
 ];

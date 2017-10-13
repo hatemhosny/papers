@@ -2,21 +2,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { AppPagesComponent } from './app-pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SampleComponent } from './sample/sample.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [{
   path: '',
-  component: AppPagesComponent,
+  component: AppPagesComponent ,
   children: [{
-    path: '',
-    component: DashboardComponent,
+    path: 'home',
+    component: HomeComponent,
   }, {
-    path: 'sample',
-    component: SampleComponent,
+    path: 'papers',
+    loadChildren: './papers/papers.module#PapersModule',
   }, {
     path: 'dashboard',
-    redirectTo: '',
+    loadChildren: './dashboard/dashboard.module#DashboardModule',
+  }, {
+    path: '',
+    redirectTo: 'home',
     pathMatch: 'full',
   }],
 }];

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { AngularEchartsModule } from 'ngx-echarts';
 
 import { ThemeModule } from '../../@theme/theme.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { StatusCardComponent } from './status-card/status-card.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -16,7 +16,7 @@ import { PlayerComponent } from './rooms/player/player.component';
 @NgModule({
   imports: [
     ThemeModule,
-    AngularEchartsModule,
+    DashboardRoutingModule,
   ],
   declarations: [
     DashboardComponent,
