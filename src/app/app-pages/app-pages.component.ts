@@ -1,5 +1,4 @@
-import { NbThemeService } from '@nebular/theme';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { MENU_ITEMS } from './app-pages-menu';
 
@@ -12,13 +11,8 @@ import { MENU_ITEMS } from './app-pages-menu';
     </ngx-sample-layout>
   `,
 })
-export class AppPagesComponent implements OnInit {
+export class AppPagesComponent {
 
   menu = MENU_ITEMS;
 
-  constructor(private themeService: NbThemeService) { }
-
-  public ngOnInit(): void {
-    this.themeService.changeTheme('default');
-  }
 }
