@@ -8,137 +8,27 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: 'FEATURES',
-    group: true,
-  },
-  {
-    title: 'UI Features',
+    title: 'Journals',
     icon: 'nb-keypad',
-    link: '/pages/ui-features',
-    children: [
-      {
-        title: 'Sample',
-        link: '/pages/sample',
-      },
-      {
-        title: 'Buttons',
-        link: '/pages/ui-features/buttons',
-      },
-      {
-        title: 'Grid',
-        link: '/pages/ui-features/grid',
-      },
-      {
-        title: 'Icons',
-        link: '/pages/ui-features/icons',
-      },
-      {
-        title: 'Modals',
-        link: '/pages/ui-features/modals',
-      },
-      {
-        title: 'Typography',
-        link: '/pages/ui-features/typography',
-      },
-      {
-        title: 'Animated Searches',
-        link: '/pages/ui-features/search-fields',
-      },
-      {
-        title: 'Tabs',
-        link: '/pages/ui-features/tabs',
-      },
-    ],
+    link: '/pages/sample',
   },
   {
-    title: 'Forms',
+    title: 'Playlists',
     icon: 'nb-compose',
-    children: [
-      {
-        title: 'Form Inputs',
-        link: '/pages/forms/inputs',
-      },
-      {
-        title: 'Form Layouts',
-        link: '/pages/forms/layouts',
-      },
-    ],
+    link: '/pages/sample',
   },
   {
-    title: 'Components',
-    icon: 'nb-gear',
-    children: [
-      {
-        title: 'Tree',
-        link: '/pages/components/tree',
-      }, {
-        title: 'Notifications',
-        link: '/pages/components/notifications',
-      },
-    ],
-  },
-  {
-    title: 'Maps',
+    title: 'Bookmarks',
     icon: 'nb-location',
-    children: [
-      {
-        title: 'Google Maps',
-        link: '/pages/maps/gmaps',
-      },
-      {
-        title: 'Leaflet Maps',
-        link: '/pages/maps/leaflet',
-      },
-      {
-        title: 'Bubble Maps',
-        link: '/pages/maps/bubble',
-      },
-    ],
+    link: '/pages/sample',
   },
   {
-    title: 'Charts',
+    title: 'Statistics',
     icon: 'nb-bar-chart',
-    children: [
-      {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
-      },
-      {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
-      },
-      {
-        title: 'D3',
-        link: '/pages/charts/d3',
-      },
-    ],
+    link: '/pages/sample',
   },
   {
-    title: 'Editors',
-    icon: 'nb-title',
-    children: [
-      {
-        title: 'TinyMCE',
-        link: '/pages/editors/tinymce',
-      },
-      {
-        title: 'CKEditor',
-        link: '/pages/editors/ckeditor',
-      },
-    ],
-  },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-    ],
-  },
-  {
-    title: 'Auth',
+    title: 'Profile',
     icon: 'nb-locked',
     children: [
       {
@@ -158,5 +48,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/auth/reset-password',
       },
     ],
+  },
+  {
+    title: 'Settings',
+    icon: 'nb-gear',
+    link: '/pages/sample',
+  },
+  {
+    title: 'Admin',
+    icon: 'nb-title',
+    link: '/pages/sample',
   },
 ];
