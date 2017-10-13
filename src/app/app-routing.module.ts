@@ -11,7 +11,7 @@ import {
 
 const routes: Routes = [{
   path: '',
-  loadChildren: './app-pages/app-pages.module#AppPagesModule'
+  loadChildren: './app-pages/app-pages.module#AppPagesModule',
   },
   {
     path: 'auth',

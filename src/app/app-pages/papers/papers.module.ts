@@ -8,11 +8,11 @@ import { PaperListComponent } from './paper-list/paper-list.component';
 @NgModule({
   imports: [
     AppSharedModule,
-    PapersRoutingModule
+    PapersRoutingModule,
   ],
   declarations: [
     PapersComponent,
     PaperListComponent,
-  ]
+  ],
 })
 export class PapersModule { }
