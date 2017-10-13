@@ -4,28 +4,28 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Dashboard',
     icon: 'nb-home',
-    link: '/pages/dashboard',
+    link: '/dashboard',
     home: true,
   },
   {
     title: 'Journals',
     icon: 'nb-keypad',
-    link: '/pages/sample',
+    link: '/sample',
   },
   {
     title: 'Playlists',
     icon: 'nb-compose',
-    link: '/pages/sample',
+    link: '/sample',
   },
   {
     title: 'Bookmarks',
     icon: 'nb-location',
-    link: '/pages/sample',
+    link: '/sample',
   },
   {
     title: 'Statistics',
     icon: 'nb-bar-chart',
-    link: '/pages/sample',
+    link: '/sample',
   },
   {
     title: 'Profile',
@@ -52,11 +52,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Settings',
     icon: 'nb-gear',
-    link: '/pages/sample',
+    link: '/sample',
   },
   {
     title: 'Admin',
     icon: 'nb-title',
-    link: '/pages/sample',
+    link: '/sample',
   },
 ];
