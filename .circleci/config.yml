@@ -59,14 +59,21 @@ jobs:
           command: cp firebase.json ./dist/firebase.json
 
       - deploy:
-          name: Deploy Master to Firebase-staging
+          name: Deploy Develop branch to Firebase-development
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "develop" ]; then
+              ./node_modules/.bin/firebase deploy -P development --token=$FIREBASE_DEPLOY_TOKEN
+            fi
+
+      - deploy:
+          name: Deploy Master branch to Firebase-staging
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               ./node_modules/.bin/firebase deploy -P staging --token=$FIREBASE_DEPLOY_TOKEN
             fi
 
       - deploy:
-          name: Deploy Release to Firebase-production
+          name: Deploy Release branch to Firebase-production
           command: |
             if [[ "${CIRCLE_BRANCH}" == release* ]]; then
               ./node_modules/.bin/firebase deploy -P production --token=$FIREBASE_DEPLOY_TOKEN
