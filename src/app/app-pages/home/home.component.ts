@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   showNotification() {
-    this.notificationService.message("This is a notifcation!");
+    this.notificationService.message('This is a notifcation!');
   }
 
 }
