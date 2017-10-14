@@ -13,4 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  showNotification() {
+    this.notificationService.message("This is a notifcation!");
+  }
+
 }
