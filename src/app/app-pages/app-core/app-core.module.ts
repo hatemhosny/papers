@@ -3,6 +3,7 @@ import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core
 import { ToasterModule } from 'angular2-toaster';
 
 import { throwIfAlreadyLoaded } from '../../@core/module-import-guard';
+import { AppCoreComponent } from './app-core.component';
 import { NotificationService } from './notification/notification.service';
 import { NotificationComponent } from './notification/notification.component';
 
@@ -11,10 +12,11 @@ import { NotificationComponent } from './notification/notification.component';
     ToasterModule,
   ],
   exports: [
-    NotificationComponent,
+    AppCoreComponent,
   ],
   declarations: [
     NotificationComponent,
+    AppCoreComponent,
   ],
   providers: [
     NotificationService,

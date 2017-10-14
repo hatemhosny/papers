@@ -9,7 +9,7 @@ import { AnalyticsService } from './@core/utils/analytics.service';
 @Component({
   selector: 'ngx-app',
   template: `
-    <ngx-notification></ngx-notification>
+    <pfm-app-core></pfm-app-core>
     <router-outlet></router-outlet>
   `,
 })
