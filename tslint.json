@@ -108,13 +108,13 @@
     "directive-selector": [
       true,
       "attribute",
-      ["app","papers", "pfm", "ngx"],
+      ["app", "papers", "pfm", "ngx"],
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      ["app","papers", "ngx"],
+      ["app", "papers", "pfm", "ngx"],
       "kebab-case"
     ],
     "use-input-property-decorator": true,
