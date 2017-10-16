@@ -4,29 +4,37 @@ import { ToasterService, ToasterConfig, Toast, BodyOutputType } from 'angular2-t
 
 import 'style-loader!angular2-toaster/toaster.css';
 
+const toastType = {
+  default: 'default',
+  info: 'info',
+  success: 'success',
+  warning: 'warning',
+  error: 'error',
+};
+
 @Injectable()
 export class NotificationService {
 
   constructor(private toasterService: ToasterService) { }
 
   message(message: string) {
-    this.showToast('default', null, message);
+    this.showToast(toastType.default, null, message);
   }
 
   success(message: string) {
-    this.showToast('success', null, message);
+    this.showToast(toastType.success, null, message);
   }
 
   info(message: string) {
-    this.showToast('info', null, message);
+    this.showToast(toastType.info, null, message);
   }
 
   warning(message: string) {
-    this.showToast('warning', null, message);
+    this.showToast(toastType.warning, null, message);
   }
 
   error(message: string) {
-    this.showToast('error', null, message);
+    this.showToast(toastType.error, null, message);
   }
 
   clear() {
@@ -38,7 +46,7 @@ export class NotificationService {
       type: type,
       title: title,
       body: body,
-      showCloseButton: true,
+      showCloseButton: false,
       bodyOutputType: BodyOutputType.TrustedHtml,
     };
     this.toasterService.popAsync(toast);
