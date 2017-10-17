@@ -36,11 +36,11 @@
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/nebular-icons/scss/nebular-icons.scss",
         "../node_modules/socicon/css/socicon.css",
-        "./assets/vendors/pace/pace-theme-flash.scss",
+        "../node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
         "./app/@theme/styles/styles.scss"
       ],
       "scripts": [
-        "./assets/vendors/pace/pace.min.js"
+        "../node_modules/pace-js/pace.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
