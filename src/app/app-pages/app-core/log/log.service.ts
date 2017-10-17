@@ -9,12 +9,12 @@ class LogLevel {
   static ERROR = 'error';
   static WARNING = 'warning';
   static INFO = 'info';
-};
+}
 
 export interface LogObject {
-  error?: any,
-  message?: string,
-  notify?: boolean,
+  error?: any;
+  message?: string;
+  notify?: boolean;
 }
 
 @Injectable()
@@ -23,13 +23,14 @@ export class LogService extends ErrorHandler {
   private defaultLog: LogObject = {
     message: 'An error has occured! An error report has been sent.',
     notify: false,
-  }
+  };
 
   constructor(private notification: NotificationService) {
     // Rethrow exceptions that occur in bootstrap to angular
     super(true);
   }
 
+  /* tslint:disable:no-console */
   /**
    * This method handles unhandeled exceptions caught by angular.
    * Exceptions thrown before angular loads should be caught by Raven.config().install() in index.html
@@ -37,7 +38,7 @@ export class LogService extends ErrorHandler {
    */
   handleError(error: any): void {
     try {
-      this.logError({ error: error, notify: true })
+      this.logError({ error: error, notify: true });
     } catch (err) {
       console.log(error);
       console.log(err);
@@ -90,14 +91,14 @@ export class LogService extends ErrorHandler {
     }
 
     // Raven additional data
-    let options = {
+    const options = {
       level: logLevel,
       tags: {
-        client: environment.client
+        client: environment.client,
       },
       extra: {
-        message: logObj.message
-      }
+        message: logObj.message,
+      },
     };
 
 
