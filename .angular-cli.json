@@ -12,6 +12,11 @@
         "favicon.ico",
         "favicon.png",
         {
+          "glob": "raven.min.js",
+          "input": "../node_modules/raven-js/dist/",
+          "output": "./assets/"
+        },
+        {
           "glob": "**/*",
           "input": "../node_modules/leaflet/dist/images",
           "output": "./assets/img/markers"
