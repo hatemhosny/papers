@@ -1,7 +1,31 @@
-<nb-card>
-  <nb-card-body>
-    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12">
-    </div>
-    <button class="btn btn-primary" (click)="showNotification()">Show Notification</button>
-  </nb-card-body>
-</nb-card>
+<div class="row">
+  <button class="btn btn-primary" (click)="showNotification()">Show Notification</button>
+</div>
+<div class="row">
+  <div class="col-xl-6 col-md-8 col-sm-12" *ngFor="let x of [1,2,3,4,5]">
+    <pfm-flip-card>
+      <pfm-card-front>
+        <nb-card [style.height]="'100%'">
+          <nb-card-header>header
+          </nb-card-header>
+          <nb-card-body>body
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+          </nb-card-body>
+          <nb-card-footer>
+          </nb-card-footer>
+        </nb-card>
+      </pfm-card-front>
+      <pfm-card-back>
+        <nb-card [style.height]="'100%'">
+          <nb-card-body>
+            back
+          </nb-card-body>
+        </nb-card>
+      </pfm-card-back>
+    </pfm-flip-card>
+  </div>
+</div>
