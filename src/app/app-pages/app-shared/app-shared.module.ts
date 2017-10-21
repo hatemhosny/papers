@@ -11,6 +11,6 @@ import { FlipCardComponent } from './flip-card/flip-card.component';
   ],
   exports: [
     FlipCardComponent,
-  ]
+  ],
 })
 export class AppSharedModule { }
