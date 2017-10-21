@@ -1,0 +1,14 @@
+<div class="flipcard" [ngClass]="{'flipped': flipped}">
+  <div class="front">
+    <a class="flip-button" (click)="flipped = true">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </a>
+      <ng-content select="pfm-card-front"></ng-content>
+  </div>
+  <div class="back">
+    <a class="flip-button" (click)="flipped = false">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+      <ng-content select="pfm-card-back"></ng-content>
+  </div>
+</div>
