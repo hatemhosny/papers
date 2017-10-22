@@ -8,11 +8,11 @@ export const environment = {
   production: true,
   client: 'web',
   firebase: {
-    apiKey: '<your-key>stag',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>',
+    apiKey: 'AIzaSyCrNbG8vPU2MwEX5bq6mQbMzUzYNVU109w',
+    authDomain: 'papersfm-staging.firebaseapp.com',
+    databaseURL: 'https://papersfm-staging.firebaseio.com',
+    projectId: 'papersfm-staging',
+    storageBucket: 'papersfm-staging.appspot.com',
+    messagingSenderId: '951126881710',
   },
 };
