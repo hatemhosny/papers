@@ -13,11 +13,11 @@ export const environment = {
   production: false,
   client: 'web',
   firebase: {
-    apiKey: "AIzaSyAsvzbSXar6wYtEJVlTswpu27P8Xftm-8o",
-    authDomain: "papersfm-dev.firebaseapp.com",
-    databaseURL: "https://papersfm-dev.firebaseio.com",
-    projectId: "papersfm-dev",
-    storageBucket: "papersfm-dev.appspot.com",
-    messagingSenderId: "914912515300"
+    apiKey: 'AIzaSyAsvzbSXar6wYtEJVlTswpu27P8Xftm-8o',
+    authDomain: 'papersfm-dev.firebaseapp.com',
+    databaseURL: 'https://papersfm-dev.firebaseio.com',
+    projectId: 'papersfm-dev',
+    storageBucket: 'papersfm-dev.appspot.com',
+    messagingSenderId: '914912515300',
   },
 };
