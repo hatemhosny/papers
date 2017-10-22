@@ -33,7 +33,16 @@ jobs:
 
       - run:
           name: angular-build
-          command: npm run ng -- build --prod --aot --no-progress
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "develop" ]; then
+              npm run build:dev:aot
+            fi
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run build:stag:aot
+            fi
+            if [[ "${CIRCLE_BRANCH}" == release* ]]; then
+              npm run build:prod:aot
+            fi
 
       - run:
           name: angular-test

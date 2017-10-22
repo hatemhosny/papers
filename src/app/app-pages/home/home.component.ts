@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NotificationService } from '../app-core/notification/notification.service';
+import {environment} from '../../../environments/environment';
 
 @Component({
   templateUrl: './home.component.html',
@@ -8,9 +9,12 @@ import { NotificationService } from '../app-core/notification/notification.servi
 })
 export class HomeComponent implements OnInit {
 
+  environmentName: string;
+
   constructor(private notificationService: NotificationService) { }
 
   ngOnInit() {
+    this.environmentName = environment.name;
   }
 
   showNotification() {
