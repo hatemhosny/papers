@@ -7,6 +7,7 @@ import { AppCoreComponent } from './app-core.component';
 import { NotificationService } from './notification/notification.service';
 import { NotificationComponent } from './notification/notification.component';
 import { LogService } from './log/log.service';
+import { DataService } from './data/data.service';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { LogService } from './log/log.service';
     NotificationService,
     LogService,
     { provide: ErrorHandler, useExisting: LogService },
+    DataService,
   ],
 
 })
