@@ -1,4 +1,13 @@
 @import '../../../@theme/styles/themes';
+
+/* entire container, keeps perspective */
+.flipcard-container {
+  -webkit-perspective: 1200px;
+     -moz-perspective: 1200px;
+       -o-perspective: 1200px;
+          perspective: 1200px;
+  margin-bottom: 30px;
+}
 /* flip the pane when hovered */
 .flipcard.flipped {
 	-webkit-transform: rotateY( 180deg );
