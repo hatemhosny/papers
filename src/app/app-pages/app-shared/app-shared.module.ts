@@ -4,6 +4,7 @@ import {ThemeModule} from '../../@theme/theme.module';
 
 import { FlipCardComponent } from './flip-card/flip-card.component';
 import { RevealCardComponent } from './reveal-card/reveal-card.component';
+import { CardAccentComponent } from './card-accent/card-accent.component';
 
 @NgModule({
   imports: [
@@ -12,10 +13,12 @@ import { RevealCardComponent } from './reveal-card/reveal-card.component';
   declarations: [
     FlipCardComponent,
     RevealCardComponent,
+    CardAccentComponent,
   ],
   exports: [
     FlipCardComponent,
     RevealCardComponent,
+    CardAccentComponent,
   ],
 })
 export class AppSharedModule { }
