@@ -6,8 +6,8 @@
      -moz-perspective: 1200px;
        -o-perspective: 1200px;
           perspective: 1200px;
-  margin-bottom: 30px;
-}
+    margin-bottom: nb-theme(card-padding);
+  }
 /* flip the pane when hovered */
 .flipcard.flipped {
 	-webkit-transform: rotateY( 180deg );
@@ -56,6 +56,7 @@
 
 .front, .back {
   width: 100%;
+  height: nb-theme(card-height-medium);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .front, .back {

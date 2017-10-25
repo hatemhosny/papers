@@ -1,14 +1,14 @@
-<div>
+<p>
   Environment: {{environmentName}}
-</div>
-<div class="row">
+</p>
+<p class="row">
   <button class="btn btn-primary" (click)="showNotification()">Show Notification</button>
-</div>
+</p>
 <div class="row">
-  <div class="col-xl-6 col-sm-12" *ngFor="let x of [1,2,3,4,5]">
+  <div class="col-xl-6 col-sm-12">
     <pfm-flip-card>
       <pfm-card-front>
-        <nb-card [style.height]="'100%'">
+        <nb-card size="medium">
           <nb-card-header>header
           </nb-card-header>
           <nb-card-body>body
@@ -23,12 +23,38 @@
         </nb-card>
       </pfm-card-front>
       <pfm-card-back>
-        <nb-card [style.height]="'100%'">
+        <nb-card size="medium">
           <nb-card-body>
             back
           </nb-card-body>
         </nb-card>
       </pfm-card-back>
     </pfm-flip-card>
+  </div>
+  <div class="col-xl-6 col-sm-12">
+    <pfm-reveal-card>
+      <pfm-card-front>
+        <nb-card size="medium" class="review">
+          <nb-card-header>header
+          </nb-card-header>
+          <nb-card-body>body
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+            <p>some text</p>
+          </nb-card-body>
+          <nb-card-footer>
+          </nb-card-footer>
+        </nb-card>
+      </pfm-card-front>
+      <pfm-card-back>
+        <nb-card size="medium">
+          <nb-card-body>
+            back
+          </nb-card-body>
+        </nb-card>
+      </pfm-card-back>
+    </pfm-reveal-card>
   </div>
 </div>
