@@ -6,30 +6,25 @@
   position: relative;
   height: calc(100% - #{nb-theme(card-padding)});
 }
-.front {
-  z-index: 1;
-}
 .back {
   top: 130%;
   position: absolute;
   transition: all 0.3s ease-out;
   width: 100%;
+  margin-bottom: 30px;
 }
-
 .revealcard.revealed > .back {
   top: 0;
-  z-index: 2;
+  z-index: 1;
 }
-
 .reveal-button {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   display: block;
   padding: nb-theme(card-padding);
 }
-
-.revealcard.revealed > .back > .reveal-button {
-  z-index: 3;
+.back > .reveal-button {
+  top: 0;
 }
