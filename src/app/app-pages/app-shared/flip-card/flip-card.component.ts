@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 export class FlipCardComponent {
 
   @Input() flipped: boolean = false;
+  @Input() size: string = 'medium';
+  // TODO allow dynamic height based on larger card (front/back)
 
 }

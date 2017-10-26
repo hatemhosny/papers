@@ -1,16 +1,16 @@
-<div class="revealcard" [ngClass]="{'revealed': revealed}">
-  <div class="content">
-    <ng-content select="pfm-card-front"></ng-content>
-    <a class="reveal-button" (click)="revealed = true">
-      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-    </a>
+<div class="revealcard pfm-card-{{size}}" [ngClass]="{'revealed': revealed}">
+  <div class="front">
+      <ng-content select=".card-front"></ng-content>
+      <a class="reveal-button" (click)="revealed = true">
+        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+      </a>
   </div>
   <div class="back">
-  <div class="reveal">
-    <ng-content select="pfm-card-back"></ng-content>
-    <a class="reveal-button" (click)="revealed = false">
-      <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
+    <div class="reveal">
+        <ng-content select=".card-back"></ng-content>
+        <a class="reveal-button" (click)="revealed = false">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+    </div>
   </div>
-</div>
 </div>

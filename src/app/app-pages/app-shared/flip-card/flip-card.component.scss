@@ -52,11 +52,8 @@
           z-index: 3;
 }
 
-/*        Style       */
-
 .front, .back {
   width: 100%;
-  height: nb-theme(card-height-medium);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .front, .back {
@@ -90,5 +87,6 @@
   bottom: 0;
   display: block;
   padding: nb-theme(card-padding);
+  margin-bottom: nb-theme(card-margin);
   z-index: 5;
 }

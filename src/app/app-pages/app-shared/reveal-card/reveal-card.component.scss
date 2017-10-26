@@ -2,11 +2,14 @@
 
 .revealcard {
   width: 100%;
-  overflow: hidden;
   position: relative;
-  height: calc(100% - #{nb-theme(card-padding)});
+  display: flex;
 }
-.revealcard > .content {
+.front, .reveal {
+  position: relative;
+  width: 100%;
+}
+.front {
   z-index: 1;
 }
 .reveal {
@@ -14,7 +17,8 @@
   position: absolute;
   transition: all 0.3s ease-out;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: nb-theme(card-padding);
+  margin-top: calc(#{nb-theme(card-margin)} + #{nb-theme(card-padding)});
 }
 .revealcard.revealed > .back > .reveal {
   top: 0;
@@ -27,19 +31,16 @@
   bottom: 0;
   display: block;
   padding: nb-theme(card-padding);
+  margin-bottom: nb-theme(card-padding);
   z-index: 2;
 }
 .reveal > .reveal-button {
   top: 0;
 }
-
 .back {
   position: absolute;
   height: 100%;
   width: 100%;
-  bottom: nb-theme(card-padding);
+  bottom: calc(#{nb-theme(card-margin)} + #{nb-theme(card-padding)});
   overflow: hidden;
-}
-.reveal {
-  margin-top:  nb-theme(card-padding);
 }

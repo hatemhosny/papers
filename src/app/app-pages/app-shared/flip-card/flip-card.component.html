@@ -1,13 +1,13 @@
 <div class="flipcard-container">
-  <div class="flipcard" [ngClass]="{'flipped': flipped}">
+  <div class="flipcard pfm-card-{{size}}" [ngClass]="{'flipped': flipped}">
     <div class="front">
-      <ng-content select="pfm-card-front"></ng-content>
+      <ng-content select=".card-front"></ng-content>
       <a class="flip-button" (click)="flipped = true">
         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
       </a>
     </div>
     <div class="back">
-      <ng-content select="pfm-card-back"></ng-content>
+      <ng-content select=".card-back"></ng-content>
       <a class="flip-button" (click)="flipped = false">
         <i class="fa fa-reply" aria-hidden="true"></i>
       </a>
