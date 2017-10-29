@@ -13,18 +13,18 @@ export class NotificationComponent implements OnInit {
 
   config: ToasterConfig;
 
-    position: string = 'toast-top-right';
-    animationType: string = 'fade';
-    timeout: number = 50000;
-    toastsLimit: number = 5;
+    position = 'toast-top-right';
+    animationType = 'fade';
+    timeout = 50000;
+    toastsLimit = 5;
 
-    isNewestOnTop: boolean = true;
-    isHideOnClick: boolean = true;
-    isDuplicatesPrevented: boolean = false;
-    isCloseButton: boolean = false;
+    isNewestOnTop = true;
+    isHideOnClick = true;
+    isDuplicatesPrevented = false;
+    isCloseButton = false;
 
-    animations: string[] = ['fade', 'flyLeft', 'flyRight', 'slideDown', 'slideUp'];
-    positions: string[] = ['toast-top-full-width', 'toast-bottom-full-width', 'toast-top-left', 'toast-top-center',
+    animations = ['fade', 'flyLeft', 'flyRight', 'slideDown', 'slideUp'];
+    positions = ['toast-top-full-width', 'toast-bottom-full-width', 'toast-top-left', 'toast-top-center',
     'toast-top-right', 'toast-bottom-right', 'toast-bottom-center', 'toast-bottom-left', 'toast-center'];
 
 
