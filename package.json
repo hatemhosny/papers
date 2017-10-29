@@ -16,6 +16,7 @@
     "build:stag:ci": "npm-run-all -p -r build:stag build:stag:aot",
     "build:prod": "npm run build -- --prod --env=prod",
     "build:prod:aot": "npm run build:prod -- --aot",
+    "build:sourcemaps": "npm run build:prod:aot -- --vendor-chunk=false --sourcemaps",
     "build:prod:ci": "npm-run-all -p -r build:prod build:prod:aot",
     "test": "ng test -sr",
     "test:coverage": "rimraf coverage && npm run test -- -cc",
