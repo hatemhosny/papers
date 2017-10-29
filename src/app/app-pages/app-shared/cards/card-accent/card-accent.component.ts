@@ -7,7 +7,7 @@ import { Component, Input} from '@angular/core';
 })
 export class CardAccentComponent {
 
-  @Input() type: string = '';
-  @Input() color: string = '';
+  @Input() type = '';
+  @Input() color = '';
 
 }

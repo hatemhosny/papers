@@ -7,8 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RevealCardComponent {
 
-  @Input() revealed: boolean = false;
-  @Input() size: string = 'medium';
-  // TODO allow dynamic height based on larger card (front/back)
+  @Input() revealed = false;
+  @Input() size = 'medium';
 
 }
