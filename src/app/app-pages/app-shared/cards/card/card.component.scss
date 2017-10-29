@@ -1,4 +1,4 @@
-@import '../../../@theme/styles/themes';
+@import '../../../../@theme/styles/themes';
 
 nb-card-header:empty, nb-card-body:empty, nb-card-footer:empty {
   display: none;
@@ -6,6 +6,10 @@ nb-card-header:empty, nb-card-body:empty, nb-card-footer:empty {
 
 nb-card {
   position: relative;
+}
+
+:host-context(.card-back)  nb-card {
+  height: 100%;
 }
 
 :host-context(.pfm-card-xxsmall) nb-card {

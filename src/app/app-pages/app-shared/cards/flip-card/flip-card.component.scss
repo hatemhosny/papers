@@ -1,6 +1,5 @@
-@import '../../../@theme/styles/themes';
+@import '../../../../@theme/styles/themes';
 
-/* entire container, keeps perspective */
 .flipcard-container {
   -webkit-perspective: 1200px;
      -moz-perspective: 1200px;
@@ -8,14 +7,12 @@
           perspective: 1200px;
     margin-bottom: nb-theme(card-padding);
   }
-/* flip the pane when hovered */
 .flipcard.flipped {
 	-webkit-transform: rotateY( 180deg );
      -moz-transform: rotateY( 180deg );
        -o-transform: rotateY( 180deg );
           transform: rotateY( 180deg );
   }
-/* flip speed goes here */
 .flipcard {
   -webkit-transition: -webkit-transform 0.5s;
      -moz-transition: -moz-transform 0.5s;
@@ -30,21 +27,18 @@
   margin-bottom: nb-theme(card-padding);
 }
 
-/* hide back of pane during swap */
-.front, .back {
+.card-front, .card-back {
 	-webkit-backface-visibility: hidden;
      -moz-backface-visibility: hidden;
        -o-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
-/* front pane, placed above back */
-.front {
+.card-front {
 	z-index: 2;
 }
 
-/* back, initially hidden pane */
-.back {
+.card-back {
   -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
       -o-transform: rotateY( 180deg );
@@ -52,31 +46,31 @@
           z-index: 3;
 }
 
-.front, .back {
+.card-front, .card-back {
   width: 100%;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .front, .back {
+    .card-front, .card-back {
         -ms-backface-visibility: visible;
             backface-visibility: visible;
     }
 
-    .back {
+    .card-back {
         visibility: hidden;
         -ms-transition: all 0.2s cubic-bezier(0.92, 0.01, 0.83, 0.67);
     }
-    .front {
+    .card-front {
       z-index: 4;
     }
-    .flipcard.flipped .back {
+    .flipcard.flipped .card-back {
       z-index: 5;
       visibility: visible;
     }
 }
-.flipcard.flipped .back {
+.flipcard.flipped .card-back {
   margin-left: -100%;
 }
-.flipcard:not(.flipped) .front {
+.flipcard:not(.flipped) .card-front {
   margin-right: -100%;
 }
 
