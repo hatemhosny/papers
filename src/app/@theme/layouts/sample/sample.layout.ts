@@ -37,6 +37,7 @@ import 'rxjs/add/operator/delay';
       </nb-sidebar>
 
       <nb-layout-column class="main-content">
+        <ng-content select="pfm-breadcrumbs"></ng-content>
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
 

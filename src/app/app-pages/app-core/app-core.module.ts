@@ -1,6 +1,7 @@
 import { ErrorHandler, ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 
 import { ToasterModule } from 'angular2-toaster';
+import { BreadcrumbService } from 'ng2-breadcrumb/ng2-breadcrumb';
 
 import { throwIfAlreadyLoaded } from '../../@core/module-import-guard';
 import { AppCoreComponent } from './app-core.component';
@@ -25,6 +26,7 @@ import { DataService } from './data/data.service';
     LogService,
     { provide: ErrorHandler, useExisting: LogService },
     DataService,
+    BreadcrumbService,
   ],
 
 })

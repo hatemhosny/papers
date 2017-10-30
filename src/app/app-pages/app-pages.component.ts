@@ -7,6 +7,7 @@ import { MENU_ITEMS } from './app-pages-menu';
   template: `
     <ngx-sample-layout>
       <nb-menu [items]="menu"></nb-menu>
+      <pfm-breadcrumbs></pfm-breadcrumbs>
       <router-outlet></router-outlet>
     </ngx-sample-layout>
   `,
