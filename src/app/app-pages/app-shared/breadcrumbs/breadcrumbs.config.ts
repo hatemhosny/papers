@@ -7,13 +7,13 @@ export const breadcrumbsConfig = {
     // {route: '', name: ''},
   ],
   hide: [
-    // {route: '/home'},
+    {route: '/home'},
   ],
   regexHide: [
     // {route: ''},
   ],
   noBreadcrumbs: [
-    {route: '/home'},
+    // {route: '/home'},
   ],
   regexNoBreadcrumbs: [
     // {route: '/home'},
