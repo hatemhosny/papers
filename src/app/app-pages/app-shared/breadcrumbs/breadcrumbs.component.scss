@@ -1,13 +1,13 @@
 @import '../../../@theme/styles/themes';
 
-:host ::ng-deep breadcrumb .breadcrumb {  /* stylelint-disable-line */
+.breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
 }
-:host ::ng-deep breadcrumb a {  /* stylelint-disable-line */
+.breadcrumb a {
   cursor: pointer;
   color: nb-theme(link-color) !important;
 }
-:host ::ng-deep breadcrumb a:hover {  /* stylelint-disable-line */
+.breadcrumb a:hover {
   color: nb-theme(link-color-hover) !important;
 }
