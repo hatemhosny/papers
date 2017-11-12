@@ -1,4 +1,4 @@
-<pfm-card *ngIf="!isHidden && _urls.length">
+<pfm-card *ngIf="!isHidden && _urls?.length > 0">
   <ul class="breadcrumb">
     <li *ngFor="let url of _urls; let last = last" [ngClass]="{'breadcrumb-item': true, 'active': last}"> <!-- disable link of last item -->
         <a role="button" *ngIf="!last && url == prefix" (click)="navigateTo('/')">{{url}}</a>
